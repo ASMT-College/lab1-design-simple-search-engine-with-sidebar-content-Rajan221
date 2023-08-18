@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Design</title>
+
+    <style>
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      #header {
+        font-size: 20px;
+      }
+      #outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        height: 80vh;
+        width: 100%;
+      }
+      #main {
+        text-align: center;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        float: left; /*float used for first div */
+      }
+      #sec {
+        width: 20%;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="header">This is design with float</span>
+    <div id="outer">
+      <div id="main">
+        <div>
+          <h1>Welcome to Asian Search</h1>
+          <img
+            src="https://img.freepik.com/free-icon/google_318-278809.jpg"
+            alt="hamro logo"
+            height="140px"
+            loading="lazy"
+          />
+          <br />
+          <br />
+
+          <div
+            style="
+              display: flex;
+              gap: 3px;
+              justify-content: center;
+              margin-top: 10px;
+            "
+          >
+            <input
+              style="
+                height: 4vh;
+                width: 23vw;
+                border-radius: 20px;
+                border: 0.3px solid #999;
+              "
+              type="text"
+            />
+
+            <button>Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec">
+        <ul>
+          <h2>Recent Searches</h2>
+          <li>ram</li>
+          <li>sam</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
